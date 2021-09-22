@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Lexend Deca";
+  src: url(fonts/LexendDeca-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url(fonts/BigShouldersDisplay-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+                         /*  background color cart */
+.bright-orange {
+  background-color: hsl(31, 77%, 52%);
+}
+.dark-cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+.very-dark-cyan {
+  background-color: hsl(179, 100%, 13%);
+}
+                                 /* font color  */
+.color-bright-orange {
+  color: hsl(31, 77%, 52%);
+}
+.color-dark-cyan {
+  color: hsl(184, 100%, 22%);
+}
+.color-very-dark-cyan {
+  color: hsl(179, 100%, 13%);
+}
+body {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 83vh;
+}
+h2 {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  color: #f2f2f2;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0;
+}
+.cart {
+  width: 307px;
+  height: 500px;
+  padding: 50px;
+}
+.cart:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.cart:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.cart p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.75;
+  line-height: 25px;
+}
+button {
+  width: 142px;
+  height: 44px;
+  border-radius: 25px;
+  border: 2px solid #f2f2f2;
+  background-color: #f2f2f2;
+  transition: all 0.5s ease-in-out;
+  margin-top: 100px;
+}
+button a {
+  padding: 11px 31px;
+  font-family: "Lexend Deca";
+  display: block;
+  font-weight: normal;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease-in-out;
+}
+button a:hover {
+  color: #f2f2f2;
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+                                         /* Responsive Design */
+@media only screen and (max-width: 992px) {
+  body {
+    height: 90%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .cart {
+    width: 327px;
+    height: 442px;
+    padding: 50px;
+  }
+  .cart:first-child {
+    border-radius: 8px 8px 0 0;
+  }
+  .cart:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+  button {
+    margin-top: 50px;
+  }
+}
